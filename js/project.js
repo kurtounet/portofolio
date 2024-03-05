@@ -1,12 +1,13 @@
+const pathSvg = "assets/svg/logo-tech/";
 const project = "assets/imgs/project.jpg";
-const html = "assets/imgs/HTML5_logo.svg";
-const css = "assets/imgs/CSS_logo.svg";
-const js = "assets/imgs/javascript_logo.svg";
-const angular = "assets/imgs/angular_logo.svg";
-const github = "assets/imgs/github_logo.svg";
-const symfony = "assets/imgs/symfony_icon.svg";
-const linkedin = "assets/imgs/LinkedIn_icon.svg";
-const email = "assets/imgs/email.svg"
+const html = pathSvg + "html5.svg ";
+const css = pathSvg + "css3.svg ";
+const js = pathSvg + "javascript.svg ";
+const angular = pathSvg + "angular.svg ";
+const github = pathSvg + "github.svg";
+const symfony = pathSvg + "symfony.svg ";
+const linkedin = pathSvg + "LinkedIn_icon.svg";
+const email = pathSvg + "email.svg "
 
 const linkClick = document.getElementsByClassName("link");
 const divProjet = document.getElementById("article-projet");

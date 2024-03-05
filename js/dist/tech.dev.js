@@ -1,33 +1,31 @@
 "use strict";
 
-// Correct DATA structure and placement
-pathSvg = "assets/svg/logo-tech";
 pathImgs = "assets/imgs";
 var dataTech = {
   Langages: {
     titre: "Langages de programmation",
-    obj: ["python", "php", "javascript", "html_5", "css", "sql", "C"]
+    obj: ["python", "php", "javascript", "html5", "css3"]
   },
   Frameworks: {
     titre: "Frameworks et bibliothèques",
-    obj: ["Angular", "Symfony"],
-    objfuture: ["React", "Vue.js", "TensorFlow", "PyTorch", "Keras"]
+    obj: ["angular", "symfony", "wordpress"],
+    objfuture: ["react", "vue.js", "nextjs"]
   },
   Outils: {
     titre: "Outils de développement",
-    obj: ["Git", "Docker", "VSCode", "Jupyter Notebook"]
+    obj: ["git", "docker", "vscode"]
   },
   Database: {
     titre: "Base de données",
-    obj: ["MySQL", "MariaDB", "PostgreSQL", "MongoDB", "SQLite"]
+    obj: ["mysql", "mariadb", "postgresql", "mongodb", "sqlite"]
   },
   Gestion_project: {
     titre: "Méthodologies et outils de gestion de projet",
-    obj: ["Agile", "Scrum", "Kanban", "Trello"]
+    obj: ["agile", "scrum", "kanban", "trello"]
   },
   UI_UX: {
     titre: "Conception d'interfaces utilisateur UI/UX",
-    obj: ["Figma"]
+    obj: ["figma"]
   }
 }; // Supposition que techList est correctement sélectionné
 // Cette ligne sélectionne l'élément HTML avec l'ID 'divTechno'
@@ -53,7 +51,8 @@ for (var category in dataTech) {
       var tech = _step.value;
       console.log(tech);
       var imgTech = document.createElement("img");
-      imgTech.src = "assets/imgs/logo-technologies/angular.png";
+      imgTech.src = pathSvg + tech + ".svg";
+      imgTech.className = "techsvg";
       imgTech.alt = tech;
       var pTech = document.createElement("p");
       pTech.textContent = tech.toUpperCase();
