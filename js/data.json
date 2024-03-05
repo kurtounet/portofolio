@@ -1,0 +1,152 @@
+{
+  "Langages_de_programmation": {
+    "titre": "Langages_de_programmation",
+    "obj": [
+      "Python",
+      "Java",
+      "JavaScript",
+      "HTML/CSS",
+      "SQL",
+      "C/C++"
+    ]
+  },
+  "langages": {
+    "titre": "Langages_de_programmation",
+    "obj": [
+      "Django",
+      "Flask",
+      "Spring Boot",
+      "React",
+      "Angular",
+      "Vue.js",
+      "TensorFlow",
+      "PyTorch",
+      "Keras"
+    ]
+  },
+  "Frameworks_et_bibliothèques": {
+    "titre": "Frameworks et bibliothèques",
+    "obj": [
+      "Django",
+      "Flask",
+      "Spring Boot",
+      "React",
+      "Angular",
+      "Vue.js",
+      "TensorFlow",
+      "PyTorch",
+      "Keras"
+    ]
+  },
+  "Outils": {
+    "titre": [
+      "Outils de développement"
+    ],
+    "obj": [
+      "Git",
+      "Docker",
+      "VSCode",
+      "Jupyter Notebook"
+    ]
+  },
+  "database": {
+    "titre": [
+      "Méthodologies et outils de gestion de projet"
+    ],
+    "obj": [
+      "Agile",
+      "Scrum",
+      "Kanban",
+      "Trello"
+    ]
+  },
+  "gproject": {
+    "titre": [
+      "Méthodologies_et_outils_de_gestion_de_projet"
+    ],
+    "obj": [
+      "Agile",
+      "Scrum",
+      "Kanban",
+      "Trello"
+    ]
+  },
+  "UI_UX": [
+    "Conception d'interfaces utilisateur UI/UX",
+    "Figma"
+  ],
+  "projets": [
+    {
+      "id": 1,
+      "titre": "projet 1",
+      "description": "projet 1 description",
+      "image": "https://picsum.photos/200/300",
+      "langages": [
+        "langage 1",
+        "langage 2",
+        "langage 3"
+      ],
+      "page": "https://picsum.photos/200/300"
+    },
+    {
+      "id": 1,
+      "titre": "projet 1",
+      "description": "projet 1 description",
+      "image": "https://picsum.photos/200/300",
+      "langages": [
+        "langage 1",
+        "langage 2",
+        "langage 3"
+      ],
+      "page": "https://picsum.photos/200/300"
+    },
+    {
+      "id": 1,
+      "titre": "projet 1",
+      "description": "projet 1 description",
+      "image": "https://picsum.photos/200/300",
+      "langages": [
+        "langage 1",
+        "langage 2",
+        "langage 3"
+      ],
+      "page": "https://picsum.photos/200/300"
+    },
+    {
+      "id": 1,
+      "titre": "projet 1",
+      "description": "projet 1 description",
+      "image": "https://picsum.photos/200/300",
+      "langages": [
+        "langage 1",
+        "langage 2",
+        "langage 3"
+      ],
+      "page": "https://picsum.photos/200/300"
+    },
+    {
+      "id": 1,
+      "titre": "projet 1",
+      "description": "projet 1 description",
+      "image": "https://picsum.photos/200/300",
+      "langages": [
+        "langage 1",
+        "langage 2",
+        "langage 3"
+      ],
+      "page": "https://picsum.photos/200/300"
+    },
+    {
+      "id": 1,
+      "titre": "projet 1",
+      "description": "projet 1 description",
+      "image": "https://picsum.photos/200/300",
+      "langages": [
+        "langage 1",
+        "langage 2",
+        "langage 3"
+      ],
+      "page": "https://picsum.photos/200/300"
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+
+@import "_base.sass"
+@import "_variables.sass"
+
+header
+	background-color: $jaune
+	padding-top: 10px
+	display: flex
+	text-align: center
+	position: fixed
+
+// 	div#menu-burger
+// 		display: none
+// nav
+
+// 	display: flex
+// 	justify-content: space-around
+// 	align-items: flex-end
+// 	align-content: flex-end
+
+// 	svg
+// 		width: 25 px
+// 		height: 25 px
+// 		&:hover
+// 			width: 50 px
+// 			height: 50 px
+
+// 	ul
+// 		display: flex
+// 		list-style: none
+// 		li
+// 			display: inline-block
+// 			text-transform: uppercase
+// 			padding: 0 10px
+// 			a
+// 				display: flex
+// 				flex-direction: column
+// 				color: $bleu
+// 				align-items: center
+// 				justify-content: end
+// 				text-decoration: none
+// 				p
+// 					margin: 0
+
+// 	div#menu-close
+// 		display: none
+// main
+
+// 	section
+// 		border-bottom: 1px solid $orange
+// 		height: 100vh
+// 		display: flex
+// 		flex-direction: column
+// 		margin: 20px 0px
+// 		h2
+// 			padding: 0.5rem
+// 			color: $orange
+
+// 		p
+// 			padding: 0.5rem
+
+// 	section#accueil
+
+// 	section#a-propos
+
+// 	section#technologies
+// 		height: fit-content
+// 		h3
+// 			margin: 1rem
+// 		div
+// 			display: flex
+// 			//flex-direction: column
+// 			align-items: flex-start
+// 			justify-content: space-evenly
+// 			padding: 1rem
+// 			section
+// 				border: 2px solid $bleu
+// 				margin: 1rem
+// 				display: flex
+// 				flex-direction: column
+// 				article
+// 					display: flex
+// 					flex-direction: column
+// 					align-items: center
+
+// 					img
+// 						width: 5rem
+// 						height: 5rem
+
+// 					&:hover
+// 						transform: 0.5s scale(1.05)
+
+// 	section#projets
+// 		height: fit-content
+// 		width: 90%
+
+// 		div#article-projet
+// 			display: flex
+// 			flex-wrap: wrap
+// 			justify-content: center
+
+// 			article
+// 				background-color: $blanc
+// 				height: fit-content
+// 				width: fit-content
+// 				border-radius: $radius-card
+// 				border: 2px solid $orange
+// 				margin: 10px
+// 				box-shadow: 2px 7px 6px -6px rgba(0,0,0,0.75)
+
+// 				img
+// 					width: 100%
+// 					border-radius: $radius-card $radius-card 0 0
+// 					//margin-top: 1rem
+
+// 				h3, p , a
+// 					padding: 0
+// 					margin: 0.5rem 0.5rem
+
+// 				a
+// 					background-color: $bleu
+// 					border-radius: 8px
+// 					display: inline-block
+// 					color: $blanc
+// 					padding: 0.5rem 0.5rem
+
+// 					&:hover
+// 						background-color: $orange
+// 				&:hover
+// 					transform: scale(1.05)
+// 					transition-delay: 0.1s
+
+// 	section#contact
+// 		flex-direction: column
+// 		padding: 0.5rem
+// 		form
+// 			height: 100vh
+// 			display: flex
+// 			flex-direction: column
+// 			align-items: strech
+// 			justify-content: strech
+// 			align-content: center
+
+// 			input, label, textarea, button
+// 				padding: 0.5rem
+
+// 			button
+// 				background-color: $bleu
+// 				color: $blanc
+// 				padding: 1rem 0
+// 				margin: 1rem 0
+// footer
+// 	background-color: $bleu
+// 	text-align: center
+// 	color: $blanc
+
+/* si la taille de l'écran est < 600px */
+@media screen and (min-width: 359px)
+	/* Styles pour les écrans de largeur maximale de 768px */
+
+header
+	background-color: $orange
+	display: flex
+	justify-content: space-between
+	align-content: space-between
+	align-items: center
+	padding: 0.5rem 1rem
+	div#menu-burger
+		display: inline-block
+		position: relative
+		width: 10px
+		height: 10px
+
+nav
+	display: flex
+	flex-direction: column
+	align-items: center
+	.open-menu
+		background-color: $orange
+		flex-direction: column
+		align-items: center
+		justify-content: start
+		width: 100vw
+		height: fit-content
+
+	ul
+		flex-direction: column
+		a
+
+			padding: 1.5rem
+			text-align: center
+	div#menu-close
+		display: block
+		position:
+		top: 100px
+		right: 10px
+
+main
+	section
+		height: 100vh
+
+		h2
+			color: $bleu
+	section#projets div
+		display: flex
+		flex-direction: column
+		align-items: center
+		article
+			border: 2px solid $bleu
+			margin: 1rem
+			padding: 10px
+			h3,p
+				padding: 1rem 0
+			a
+				background-color: $bleu
+				padding: 0.5rem 0.5rem
+		/*height: fit-content*/
+	section#technologies div
+		height: fit-content
+		flex-direction: column

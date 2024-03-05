@@ -1,0 +1,44 @@
+Domaines de compétences
+
+GESTION DE PROJETS WEB
+Site vitrine, corporate, évènementiel, e-commerce, intranet, application mobile.
+
+CONCEPTION GRAPHIQUE & WEBDESIGN
+Logos, templates Web, plaquettes publicitaires, cartes de visite, newsletters...
+
+APPLICATIONS SPÉCIFIQUES ET INTERFACE D'ADMINISTRATION
+PHP - MYSQL - AJAX / ASP.NET - C# - SQL
+
+MISE EN PLACE / MODIFICATION / GESTION DE CMS
+Wordpress, Joomla, Prestashop, phpBB, IPBoard
+
+INTÉGRATION (X)HTML / CSS
+Codage à la main respectueux des standards du Web
+
+DYNAMISE DES PAGES PAR JAVASCRIPT / AJAX
+jQuery, Prototype, Mootools, Scriptaculous
+
+VALIDATION W3C, WAI & RÉFÉRENCEMENT NATUREL SEO
+Accessibilité & ergonomie des pages web
+
+CONCEPTION MULTI-PLATEFORMES
+Compatible tous supports, tablette & application mobile
+
+
+HTML 5.0
+ 
+CSS 3/4
+ 
+BOOTSTRAP
+ 
+PHP
+ 
+MYSQL, Maria db
+ 
+JAVASCRIPT
+ 
+RESPONSIVE
+ 
+SEO
+ 
+Angular
