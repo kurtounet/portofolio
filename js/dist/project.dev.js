@@ -1,23 +1,24 @@
 "use strict";
 
+var pathSvg = "assets/svg/logo-tech/";
 var project = "assets/imgs/project.jpg";
-var html = "assets/imgs/HTML5_logo.svg";
-var css = "assets/imgs/CSS_logo.svg";
-var js = "assets/imgs/javascript_logo.svg";
-var angular = "assets/imgs/angular_logo.svg";
-var github = "assets/imgs/github_logo.svg";
-var symfony = "assets/imgs/symfony_icon.svg";
-var linkedin = "assets/imgs/LinkedIn_icon.svg";
-var email = "assets/imgs/email.svg";
+var html = pathSvg + "html5.svg ";
+var css = pathSvg + "css3.svg ";
+var js = pathSvg + "javascript.svg ";
+var angular = pathSvg + "angular.svg ";
+var github = pathSvg + "github.svg";
+var symfony = pathSvg + "symfony.svg ";
+var linkedin = pathSvg + "LinkedIn_icon.svg";
+var email = pathSvg + "email.svg ";
 var linkClick = document.getElementsByClassName("link");
 var divProjet = document.getElementById("article-projet");
 var dataProject = [{
   "id": 1,
-  "titre": " Mon projet 1",
-  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, accusantium. \n  Error iste, vel dolorum ipsa minus nihil voluptatem neque quibusdam ducimus, accusamus \n  ipsum atque assumenda, officia consequatur? Recusandae, porro quibusdam!",
+  "titre": " MeatBio",
+  "description": "Site Web pour une boucherie Bio, lors de ma validation de web static",
   "image": "assets/imgs/project.jpg",
-  "langages": [html, css, js, symfony, angular, github],
-  "page": "assets/imgs/email.svg"
+  "langages": [html, css, js],
+  "page": "https://kurtounet.github.io/interoWebStatic/"
 }, {
   "id": 2,
   "titre": " Mon projet 2",

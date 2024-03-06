@@ -13,13 +13,11 @@ const linkClick = document.getElementsByClassName("link");
 const divProjet = document.getElementById("article-projet");
 let dataProject = [{
     "id": 1,
-    "titre": " Mon projet 1",
-    "description": `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, accusantium. 
-  Error iste, vel dolorum ipsa minus nihil voluptatem neque quibusdam ducimus, accusamus 
-  ipsum atque assumenda, officia consequatur? Recusandae, porro quibusdam!`,
+    "titre": " MeatBio",
+    "description": `Site Web pour une boucherie Bio, lors de ma validation de web static`,
     "image": "assets/imgs/project.jpg",
-    "langages": [html, css, js, symfony, angular, github],
-    "page": "assets/imgs/email.svg"
+    "langages": [html, css, js],
+    "page": "https://kurtounet.github.io/interoWebStatic/"
   },
   {
     "id": 2,
