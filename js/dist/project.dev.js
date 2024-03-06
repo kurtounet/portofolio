@@ -1,16 +1,5 @@
 "use strict";
 
-var pathSvg = "assets/svg/logo-tech/";
-var project = "assets/imgs/project.jpg";
-var html = pathSvg + "html5.svg ";
-var css = pathSvg + "css3.svg ";
-var js = pathSvg + "javascript.svg ";
-var angular = pathSvg + "angular.svg ";
-var github = pathSvg + "github.svg";
-var symfony = pathSvg + "symfony.svg ";
-var linkedin = pathSvg + "LinkedIn_icon.svg";
-var email = pathSvg + "email.svg ";
-var sass = pathSvg + "sass.svg ";
 var linkClick = document.getElementsByClassName("link");
 var divProjet = document.getElementById("article-projet");
 var dataProject = [{
@@ -57,38 +46,36 @@ var dataProject = [{
   page: "assets/imgs/email.svg"
 }]; // Parcours de chaque clé dans le JSON et création de la liste des technologies
 
-var _loop = function _loop(_project) {
+var _loop = function _loop(project) {
   var cardProject = document.createElement("article");
   cardProject.classList.add("card-projet"); // title
 
   var titleProject = document.createElement("h3");
-  titleProject.textContent = dataProject[_project].titre;
+  titleProject.textContent = dataProject[project].titre;
   console.log(titleProject); // description
 
   var descriptionProject = document.createElement("p");
-  descriptionProject.textContent = dataProject[_project].description; // link
+  descriptionProject.textContent = dataProject[project].description; // link
 
   var pageProject = document.createElement("a");
-  pageProject.href = dataProject[_project].page;
+  pageProject.href = dataProject[project].page;
   pageProject.textContent = "Voir le projet"; //   image
 
   var imgProject = document.createElement("img");
-  imgProject.src = dataProject[_project].image;
-  imgProject.alt = dataProject[_project].titre; //   technologies
+  imgProject.src = dataProject[project].image;
+  imgProject.alt = dataProject[project].titre; //   technologies
 
   var langages = document.createElement("ul");
-
-  dataProject[_project].langages.forEach(function (tech) {
+  dataProject[project].langages.forEach(function (tech) {
     //   image
     var item = document.createElement("li");
     var imgProject = document.createElement("img");
     imgProject.classList.add("logo-techno-card");
     imgProject.src = tech;
-    imgProject.alt = dataProject[_project].titre;
+    imgProject.alt = dataProject[project].titre;
     item.appendChild(imgProject);
     langages.appendChild(item);
   });
-
   cardProject.appendChild(imgProject);
   cardProject.appendChild(titleProject);
   cardProject.appendChild(descriptionProject);
@@ -97,6 +84,6 @@ var _loop = function _loop(_project) {
   divProjet.appendChild(cardProject);
 };
 
-for (var _project in dataProject) {
-  _loop(_project);
+for (var project in dataProject) {
+  _loop(project);
 }

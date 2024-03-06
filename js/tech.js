@@ -26,16 +26,7 @@ let dataTech = {
     obj: ["figma"],
   },
 };
-
-// Supposition que techList est correctement sélectionné
-// Cette ligne sélectionne l'élément HTML avec l'ID 'divTechno'
-// et le stocke dans la variable 'techList'.
-// Cet élément servira à afficher la liste des technologies.
-
 const divTechno = document.getElementById("divTechno");
-
-// Itération sur DATA pour générer dynamiquement la liste
-// Cette boucle for..in parcourt chaque catégorie présente dans l'objet DATA.
 for (const category in dataTech) {
   console.log(category);
   const card = document.createElement("div");

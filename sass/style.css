@@ -36,7 +36,8 @@ body #btn-arrow {
 }
 body #btn-arrow svg {
   fill: #0D0D0D;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin: 0.5rem;
 }
 body #divPopup {
@@ -128,6 +129,7 @@ nav ul {
   flex-direction: column;
   align-items: center;
   align-content: center;
+  height: -moz-fit-content;
   height: fit-content;
 }
 nav ul li {
@@ -179,6 +181,7 @@ main section#accueil p {
   padding: 20px;
 }
 main section#a-propos {
+  height: -moz-fit-content;
   height: fit-content;
 }
 main section#a-propos .flex-col-center {
@@ -234,6 +237,7 @@ main section#a-propos .job-card ul {
   flex-direction: column;
 }
 main section#projets {
+  height: -moz-fit-content;
   height: fit-content;
 }
 main section#projets div#article-projet {
@@ -244,6 +248,7 @@ main section#projets div#article-projet {
 }
 main section#projets div#article-projet article {
   background-color: #ffffff;
+  height: -moz-fit-content;
   height: fit-content;
   width: 270px;
   display: flex;
@@ -289,6 +294,7 @@ main section#projets div#article-projet article a {
   text-decoration: none;
 }
 main section#competences {
+  height: -moz-fit-content;
   height: fit-content;
 }
 main section#technologies {
@@ -296,6 +302,7 @@ main section#technologies {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: -moz-fit-content;
   height: fit-content;
 }
 main section#technologies .card-tech {
@@ -318,6 +325,7 @@ main section#technologies .card-tech ul {
   flex-direction: row;
   justify-content: space-between;
   background-color: #ffffff;
+  width: -moz-fit-content;
   width: fit-content;
   margin: 10px;
   padding: 0.5rem;
@@ -333,6 +341,7 @@ main section#technologies .card-tech ul li img {
   height: 50px;
 }
 main section#contact {
+  height: -moz-fit-content;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -348,6 +357,7 @@ main section#contact p {
   padding: 1rem;
 }
 main section#contact form {
+  height: -moz-fit-content;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -389,14 +399,14 @@ footer {
     position: relative;
     right: 10px;
   }
-
   nav {
-    background-color: #ffffff00;
+    background-color: rgba(255, 255, 255, 0);
     display: flex;
     justify-content: space-between;
     position: fixed;
     top: 0px;
     left: 100px;
+    height: -moz-fit-content;
     height: fit-content;
     width: 100%;
     z-index: 1000;
@@ -417,4 +427,4 @@ footer {
   header, footer {
     background-color: #D94423;
   }
-}
+}/*# sourceMappingURL=style.css.map */
