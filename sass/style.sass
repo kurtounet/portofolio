@@ -36,6 +36,10 @@ body
 
 		width: 200px
 		height: 200px
+	h2
+		text-align: center
+		padding: 2rem
+		font-size: 2rem
 
 	header, footer
 		background-color: $orange
@@ -85,6 +89,7 @@ header
 
 	to
 		transform: translateX(-100%)
+
 nav
 
 	display: none
@@ -132,11 +137,10 @@ nav
 main
 
 	section
-		display: flex
-		flex-direction: column
 		padding-top: $height-header
 		height: 100vh
-		width: 100vw
+		width: 100%
+
 		/*border-bottom: 2px solid rgba(250, 250 , 250, 1)*/
 
 	section#accueil
@@ -278,7 +282,7 @@ main
 		height: fit-content
 
 	section#technologies
-		width: 100%
+
 		display: flex
 		flex-direction: column
 		align-items: center
@@ -295,18 +299,19 @@ main
 			justify-content: space-between
 			box-shadow: 2px 7px 6px -6px rgba(0,0,0,0.75)
 			margin: 10px
-
+			width: 290px
+			h3
+				padding: 1rem
 			ul
 				border-radius: $radius-card
 				list-style-type: none
 				display: flex
 				flex-wrap: wrap
-				flex-direction: row
-				justify-content: space-between
+				align-items: center
+				justify-content: space-around
 				background-color: $blanc
 				width: fit-content
 				margin: 10px
-				padding: 0.5rem
 
 				li
 					display: flex
@@ -322,34 +327,32 @@ main
 		height: fit-content
 		display: flex
 		flex-direction: column
-		align-items: center
-		justify-content: space-around
-
-		width: 100%
-		h2
-			text-align: center
-			padding: 1rem
 		p
 			padding: 1rem
 		form
-			height: fit-content
+
 			display: flex
 			flex-direction: column
-			width: 100%
+			align-content: center
+			margin: 2rem
 
 			label
 				padding: 1rem 0.5rem
 			input
 				padding: 0.5rem 1rem
+			textarea
+				font-size: 1rem
+				padding: 0.5rem 0.5rem
+				height: 200px
 			button
 				border-radius: 8px
 				padding: 1rem 0
-				margin: 1rem 0
+				margin: 2rem 0
 				background-color: $bleu
-				width: 100%
 
 footer
 	text-align: center
+
 /* Pour les écrans supérieur à 375 px*/
 @media screen and (min-width: 576px)
 	header, footer

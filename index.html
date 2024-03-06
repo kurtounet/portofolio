@@ -118,13 +118,12 @@
     </section>
     <section id="projets">
       <h2>Mes Projets</h2>
-      <p>Voici quelques-uns de mes projets :</p>
       <div id="article-projet"></div>
     </section>
     <!-- SECTION TECHNO -->
     <section id="technologies">
       <h2>Technologies</h2>
-      <p>Technologies Apprises :</p>
+      <p>Technologies utilisées :</p>
       <div id="divTechno"></div>
     </section>
 
@@ -133,28 +132,28 @@
       <div>
         <h2>Contactez-moi</h2>
         <p>
-          Je suis ravi que vous envisagiez de me contacter pour discuter de votre projet ou pour toute autre demande.
-          Que vous
-          ayez une question, souhaitiez en savoir plus sur mon travail, ou envisagiez une collaboration, je suis ici
-          pour écouter
-          et répondre à vos besoins. Veuillez remplir le formulaire ci-dessous avec vos détails et votre message, et je
-          vous
-          recontacterai dès que possible.
+          Je suis ravi que vous envisagiez de me contacter.
+          Veuillez remplir le formulaire ci-dessous avec vos détails et votre message,
+          et je vous recontacterai dès que possible.
         </p>
       </div>
       <form action="email.php" method="post">
-        <label for="nom">Nom :</label>
+        <label for="nom">Votre nom * :</label>
         <input type="text" id="nom" name="nom" required />
-        <label for="email">Email :</label>
+        <label for="prenom">Votre prénom * :</label>
+        <input type="text" id="nom" name="nom" required />
+        <label for="email">Votre email * :</label>
         <input type="email" id="email" name="email" required />
-        <label for="message">Message :</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+        <label for="tel">Votre téléphone :</label>
+        <input type="tel" id="tel" name="tel" />
+        <label for="message">Message * :</label>
+        <textarea id="message" name="message" rows="10" required></textarea>
         <button type="submit">Envoyer</button>
       </form>
     </section>
   </main>
   <footer>
-    <p>&copy; 2024 Mon Portfolio Professionnel</p>
+    <p>&copy; 2024 Anthony BOSSUT</p>
   </footer>
   <div id="divPopup"></div>
   <script src="./js/var.js"></script>
