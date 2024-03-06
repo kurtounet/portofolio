@@ -4,7 +4,7 @@ pathImgs = "assets/imgs";
 var dataTech = {
   Langages: {
     titre: "Langages de programmation",
-    obj: ["python", "php", "javascript", "html5", "css3"]
+    obj: ["python", "php", "javascript", "html5", "css3", "sass"]
   },
   Frameworks: {
     titre: "Frameworks et bibliothèques",

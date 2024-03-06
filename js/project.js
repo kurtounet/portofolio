@@ -7,71 +7,72 @@ const angular = pathSvg + "angular.svg ";
 const github = pathSvg + "github.svg";
 const symfony = pathSvg + "symfony.svg ";
 const linkedin = pathSvg + "LinkedIn_icon.svg";
-const email = pathSvg + "email.svg "
+const email = pathSvg + "email.svg ";
+const sass = pathSvg + "sass.svg ";
 
 const linkClick = document.getElementsByClassName("link");
 const divProjet = document.getElementById("article-projet");
-let dataProject = [{
-    "id": 1,
-    "titre": " MeatBio",
-    "description": `Site Web pour une boucherie Bio, lors de ma validation de web static`,
-    "image": "assets/imgs/project.jpg",
-    "langages": [html, css, js],
-    "page": "https://kurtounet.github.io/interoWebStatic/"
+let dataProject = [
+  {
+    id: 1,
+    titre: " MeatBio",
+    description: `Site Web pour une boucherie Bio, lors de ma validation de web static`,
+    image: "assets/imgs/project.jpg",
+    langages: [html, sass, css, js],
+    page: "https://kurtounet.github.io/interoWebStatic/",
   },
   {
-    "id": 2,
-    "titre": " Mon projet 2",
-    "description": `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, accusantium. 
+    id: 2,
+    titre: " Mon projet 2",
+    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, accusantium. 
   Error iste, vel dolorum ipsa minus nihil voluptatem neque quibusdam ducimus, accusamus 
   ipsum atque assumenda, officia consequatur? Recusandae, porro quibusdam!`,
-    "image": "assets/imgs/project.jpg",
-    "langages": [html, css, js],
-    "page": "assets/imgs/email.svg"
+    image: "assets/imgs/project.jpg",
+    langages: [html, css, js],
+    page: "assets/imgs/email.svg",
   },
   {
-    "id": 2,
-    "titre": " Mon projet 2",
-    "description": `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, accusantium. 
+    id: 3,
+    titre: " Mon projet 3",
+    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, accusantium. 
   Error iste, vel dolorum ipsa minus nihil voluptatem neque quibusdam ducimus, accusamus 
   ipsum atque assumenda, officia consequatur? Recusandae, porro quibusdam!`,
-    "image": "assets/imgs/project.jpg",
-    "langages": [html, css, js],
-    "page": "assets/imgs/email.svg"
+    image: "assets/imgs/project.jpg",
+    langages: [html, css, js],
+    page: "assets/imgs/email.svg",
   },
   {
-    "id": 2,
-    "titre": " Mon projet 2",
-    "description": `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, accusantium. 
+    id: 4,
+    titre: " Mon projet 4",
+    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, accusantium. 
   Error iste, vel dolorum ipsa minus nihil voluptatem neque quibusdam ducimus, accusamus 
   ipsum atque assumenda, officia consequatur? Recusandae, porro quibusdam!`,
-    "image": "assets/imgs/project.jpg",
-    "langages": [html, css, js],
-    "page": "assets/imgs/email.svg"
+    image: "assets/imgs/project.jpg",
+    langages: [html, css, js],
+    page: "assets/imgs/email.svg",
   },
   {
-    "id": 2,
-    "titre": " Mon projet 2",
-    "description": `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, accusantium. 
+    id: 5,
+    titre: " Mon projet 5",
+    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, accusantium. 
   Error iste, vel dolorum ipsa minus nihil voluptatem neque quibusdam ducimus, accusamus 
   ipsum atque assumenda, officia consequatur? Recusandae, porro quibusdam!`,
-    "image": "assets/imgs/project.jpg",
-    "langages": [html, css, js],
-    "page": "assets/imgs/email.svg"
+    image: "assets/imgs/project.jpg",
+    langages: [html, css, js],
+    page: "assets/imgs/email.svg",
   },
   {
-    "id": 2,
-    "titre": " Mon projet 2",
-    "description": `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, accusantium. 
+    id: 6,
+    titre: " Mon projet 6",
+    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, accusantium. 
   Error iste, vel dolorum ipsa minus nihil voluptatem neque quibusdam ducimus, accusamus 
   ipsum atque assumenda, officia consequatur? Recusandae, porro quibusdam!`,
-    "image": "assets/imgs/project.jpg",
-    "langages": [html, css, js],
-    "page": "assets/imgs/email.svg"
-  }
-]
+    image: "assets/imgs/project.jpg",
+    langages: [html, css, js],
+    page: "assets/imgs/email.svg",
+  },
+];
 // Parcours de chaque clé dans le JSON et création de la liste des technologies
-
 
 for (const project in dataProject) {
   const cardProject = document.createElement("article");
@@ -94,18 +95,16 @@ for (const project in dataProject) {
   //   technologies
   const langages = document.createElement("ul");
 
-  dataProject[project].langages.forEach(
-    function (tech) {
-      //   image
-      const item = document.createElement("li");
-      const imgProject = document.createElement("img");
-      imgProject.classList.add("logo-techno-card");
-      imgProject.src = tech;
-      imgProject.alt = dataProject[project].titre;
-      item.appendChild(imgProject);
-      langages.appendChild(item);
-    }
-  )
+  dataProject[project].langages.forEach(function (tech) {
+    //   image
+    const item = document.createElement("li");
+    const imgProject = document.createElement("img");
+    imgProject.classList.add("logo-techno-card");
+    imgProject.src = tech;
+    imgProject.alt = dataProject[project].titre;
+    item.appendChild(imgProject);
+    langages.appendChild(item);
+  });
 
   cardProject.appendChild(imgProject);
   cardProject.appendChild(titleProject);
