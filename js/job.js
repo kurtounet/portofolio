@@ -11,7 +11,6 @@ let dataJob = [
       "Design Responsif",
       "API RESTful",
       "Gestion de version (Git)",
-      ,
       "Méthodologies Agiles",
     ],
   },
@@ -88,8 +87,6 @@ let dataJob = [
       "Dépannage",
       "Logiciels CAO (AutoCAD)",
       "Utilisation d'oscilloscope",
-      "Conception d'alimentation électrique",
-      "Protocoles de communication (I2C, SPI)",
     ],
   },
   {
@@ -105,8 +102,6 @@ let dataJob = [
       "Dépannage",
       "Logiciels CAO (AutoCAD)",
       "Utilisation d'oscilloscope",
-      "Conception d'alimentation électrique",
-      "Protocoles de communication (I2C, SPI)",
     ],
   },
 ];

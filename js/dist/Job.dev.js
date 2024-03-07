@@ -4,7 +4,7 @@ var dataJob = [{
   poste: "DEVELOPPEMENT WEB ET WEB MOBILE",
   company: "Humain BOOSTER",
   year: "2023-2024",
-  skill: ["HTML5", "CSS3", "JavaScript", "Angular", "Design Responsif", "API RESTful", "Gestion de version (Git)",, "Méthodologies Agiles"]
+  skill: ["HTML5", "CSS3", "JavaScript", "Angular", "Design Responsif", "API RESTful", "Gestion de version (Git)", "Méthodologies Agiles"]
 }, {
   poste: "FACTEUR (INTERIM)",
   company: "La Poste",
@@ -29,12 +29,12 @@ var dataJob = [{
   poste: "BRANCARDIER",
   company: "clinique du val d'ouest",
   year: "2010-2015",
-  skill: ["Conception de circuits", "Microcontrôleurs", "Disposition de PCB", "Traitement de signal", "Soudage", "Dépannage", "Logiciels CAO (AutoCAD)", "Utilisation d'oscilloscope", "Conception d'alimentation électrique", "Protocoles de communication (I2C, SPI)"]
+  skill: ["Conception de circuits", "Microcontrôleurs", "Disposition de PCB", "Traitement de signal", "Soudage", "Dépannage", "Logiciels CAO (AutoCAD)", "Utilisation d'oscilloscope"]
 }, {
   poste: "BTS SYSTEME ELECTRONIQUE",
   company: "E.Branly",
   year: "2006-2008",
-  skill: ["Conception de circuits", "Microcontrôleurs", "Disposition de PCB", "Traitement de signal", "Soudage", "Dépannage", "Logiciels CAO (AutoCAD)", "Utilisation d'oscilloscope", "Conception d'alimentation électrique", "Protocoles de communication (I2C, SPI)"]
+  skill: ["Conception de circuits", "Microcontrôleurs", "Disposition de PCB", "Traitement de signal", "Soudage", "Dépannage", "Logiciels CAO (AutoCAD)", "Utilisation d'oscilloscope"]
 }];
 
 function showPopup(id) {

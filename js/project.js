@@ -1,5 +1,3 @@
-
-
 const linkClick = document.getElementsByClassName("link");
 const divProjet = document.getElementById("article-projet");
 let dataProject = [
@@ -8,7 +6,7 @@ let dataProject = [
     titre: " MeatBio",
     description: `Site Web pour une boucherie Bio, lors de ma validation de web static`,
     image: "assets/imgs/project.jpg",
-    langages: [html, sass, css, js],
+    langages: [html, css, js],
     page: "https://kurtounet.github.io/interoWebStatic/",
   },
   {
