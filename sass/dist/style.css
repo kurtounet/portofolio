@@ -180,8 +180,8 @@ main section#accueil h2 {
 }
 main section#accueil p {
   width: 80%;
-  text-align: justify;
-  padding: 20px;
+  text-align: center;
+  padding: 5px 20px;
   font-size: 1.5rem;
 }
 main section#a-propos {
@@ -346,24 +346,26 @@ main section#contact {
   flex-direction: column;
 }
 main section#contact p {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 main section#contact form {
   display: flex;
   flex-direction: column;
   align-content: center;
-  margin: 2rem;
+  margin: 0.5rem;
 }
 main section#contact form label {
-  padding: 1rem 0.5rem;
+  padding: 0.5rem 0.5rem;
 }
 main section#contact form input {
   padding: 0.5rem 1rem;
+  border-radius: 8px;
 }
 main section#contact form textarea {
+  border-radius: 8px;
   font-size: 1rem;
   padding: 0.5rem 0.5rem;
-  height: 200px;
+  height: 150px;
 }
 main section#contact form button {
   color: #ffffff;
