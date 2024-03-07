@@ -438,8 +438,3 @@ footer {
     flex-wrap: wrap;
   }
 }
-@media screen and (min-width: 992px) {
-  header, footer {
-    background-color: #D94423;
-  }
-}

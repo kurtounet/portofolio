@@ -1,7 +1,6 @@
 const linkClick = document.getElementsByClassName("link");
 const divProjet = document.getElementById("article-projet");
-let dataProject = [
-  {
+let dataProject = [{
     id: 1,
     titre: " MeatBio",
     description: `Site Web pour une boucherie Bio, lors de ma validation de web static`,
@@ -78,6 +77,8 @@ for (const project in dataProject) {
   pageProject.textContent = "Voir le projet";
   //   image
   const imgProject = document.createElement("img");
+  imgProject.setAttribute("src", dataProject[project].page);
+
   imgProject.src = dataProject[project].image;
   imgProject.alt = dataProject[project].titre;
   //   technologies

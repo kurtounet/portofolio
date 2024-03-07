@@ -62,6 +62,7 @@ var _loop = function _loop(project) {
   pageProject.textContent = "Voir le projet"; //   image
 
   var imgProject = document.createElement("img");
+  imgProject.setAttribute("src", dataProject[project].page);
   imgProject.src = dataProject[project].image;
   imgProject.alt = dataProject[project].titre; //   technologies
 
