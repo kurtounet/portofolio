@@ -385,7 +385,8 @@ footer {
   text-align: center;
 }
 
-/* Pour les écrans supérieur à 375 px*/
+/* Smartphone */
+/*Smartphone Paysage*/
 @media screen and (min-width: 768px) {
   header {
     background-color: #F2C335;
@@ -437,4 +438,9 @@ footer {
     align-content: flex-start;
     flex-wrap: wrap;
   }
+}
+/* Tablettes*/
+/*PC*/
+@media screen and (orientation: landscape) {
+  /* Styles pour les écrans en mode paysage */
 }

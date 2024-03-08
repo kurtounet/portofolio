@@ -366,8 +366,9 @@ main
 footer
 	text-align: center
 
-/* Pour les écrans supérieur à 375 px*/
+/* Smartphone */
 @media screen and (min-width: 576px)
+/*Smartphone Paysage*/
 @media screen and (min-width: 768px)
 	header
 		background-color: $jaune
@@ -378,7 +379,6 @@ footer
 			display: none
 			position: relative
 			right: 10px
-
 	nav
 
 		display: flex
@@ -414,3 +414,10 @@ footer
 				justify-content: center
 				align-content: flex-start
 				flex-wrap: wrap
+/* Tablettes*/
+@media screen and (min-width: 768px)
+/*PC*/
+@media screen and (min-width: 991px)
+
+@media screen and (orientation: landscape)
+	/* Styles pour les écrans en mode paysage */
