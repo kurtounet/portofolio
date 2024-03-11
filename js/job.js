@@ -133,6 +133,9 @@ for (const job in dataJob) {
   const company = document.createElement("p");
   company.textContent = dataJob[job].company;
 
+  const imgArrow = document.createElement("img");
+  imgArrow.src = "assets/svg/arrow-job.svg";
+
   const divYearCard = document.createElement("div");
   divYearCard.className = "yearCard";
 

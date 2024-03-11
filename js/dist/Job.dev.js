@@ -61,6 +61,8 @@ for (var job in dataJob) {
   poste.textContent = dataJob[job].poste;
   var company = document.createElement("p");
   company.textContent = dataJob[job].company;
+  var imgArrow = document.createElement("img");
+  imgArrow.src = "assets/svg/arrow-job.svg";
   var divYearCard = document.createElement("div");
   divYearCard.className = "yearCard";
   var ulskills = document.createElement("ul");

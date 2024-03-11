@@ -199,6 +199,7 @@ main section#a-propos .box {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  user-select: none;
 }
 main section#a-propos:hover {
   cursor: pointer;
