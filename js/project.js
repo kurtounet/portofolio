@@ -1,6 +1,7 @@
 const linkClick = document.getElementsByClassName("link");
 const divProjet = document.getElementById("article-projet");
-let dataProject = [{
+let dataProject = [
+  {
     id: 1,
     titre: " MeatBio",
     description: `Site Web pour une boucherie Bio, lors de ma validation de web static`,
@@ -10,7 +11,7 @@ let dataProject = [{
   },
   {
     id: 2,
-    titre: " Générateur de mots",
+    titre: " Générateur de mots de passe",
     description: `Un projets pour montrer mes connaissances en HTML, CSS et JavaScript.`,
     image: "assets/projects/generatorpassword.png",
     langages: [html, css, js],

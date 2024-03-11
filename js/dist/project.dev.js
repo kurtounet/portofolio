@@ -11,7 +11,7 @@ var dataProject = [{
   page: "https://kurtounet.github.io/interoWebStatic/"
 }, {
   id: 2,
-  titre: " Générateur de mots",
+  titre: " Générateur de mots de passe",
   description: "Un projets pour montrer mes connaissances en HTML, CSS et JavaScript.",
   image: "assets/projects/generatorpassword.png",
   langages: [html, css, js],
