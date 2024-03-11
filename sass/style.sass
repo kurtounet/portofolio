@@ -265,6 +265,7 @@ main
 					height: $w-logo-techno-card
 
 				img
+					object-fit: contain
 					width: $w-image-projet-card
 					height: $h-image-projet-card
 					border-radius: 20px
@@ -275,9 +276,13 @@ main
 
 				p
 					width: 100%
-					white-space: nowrap
+
+					//white-space: nowrap
 					overflow: hidden
 					text-overflow: ellipsis
+					display: -webkit-box
+					-webkit-line-clamp: 3
+					-webkit-box-orient: vertical
 				a
 					background-color: $bleu
 					color: $blanc

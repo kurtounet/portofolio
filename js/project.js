@@ -10,13 +10,11 @@ let dataProject = [{
   },
   {
     id: 2,
-    titre: " Mon projet 2",
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, accusantium. 
-  Error iste, vel dolorum ipsa minus nihil voluptatem neque quibusdam ducimus, accusamus 
-  ipsum atque assumenda, officia consequatur? Recusandae, porro quibusdam!`,
-    image: "assets/imgs/project.jpg",
+    titre: " Générateur de mots",
+    description: `Un projets pour montrer mes connaissances en HTML, CSS et JavaScript.`,
+    image: "assets/projects/generatorpassword.png",
     langages: [html, css, js],
-    page: "assets/imgs/email.svg",
+    page: "https://kurtounet.github.io/PassWordgenerator/",
   },
   {
     id: 3,
