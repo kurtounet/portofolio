@@ -200,6 +200,9 @@ main section#a-propos .box {
   flex-direction: row;
   align-items: flex-start;
 }
+main section#a-propos:hover {
+  cursor: pointer;
+}
 main section#a-propos .year {
   color: #D94423;
   font-size: 1rem;
