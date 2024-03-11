@@ -107,43 +107,11 @@ let dataJob = [
 ];
 
 function showPopup(id) {
-  let b = "box" + id;
-  const box = document.getElementById(b);
-  console.log(box);
-  //box.classList.add("open-box");
-  /*
-  function closeMenu() {
-    box.className = "";
-  }
-
-  menuBurger.addEventListener("click", () => {
-   
-  });
-
-  menuClose.addEventListener("click", () => {
-    closeMenu();
-  });
-  
-  const popup = document.getElementById("divPopup");
-  let titre = document.getElementById("h3");
-  titre = dataJob[id].titre;
-  let company = document.getElementById("p");
-  company = dataJob[id].company;
-  let year = document.getElementById("p");
-  year = dataJob[id].year;
-  let ulskills = document.createElement("ul");
-  for (const sk of dataJob[id].skill) {
-    const liskills = document.createElement("li");
-    liskills.textContent = sk;
-    ulskills.appendChild(liskills);
-    console.log(sk);
-  }
-  popup.appendChild(titre);
-  popup.appendChild(company);
-  popup.appendChild(year);
-  popup.appendChild(ulskills);
-  popup.style.display = "block";
-  */
+  console.log(id);
+  const box = document.getElementById(id);
+  const ulskills = box.getElementsByTagName("ul");
+  console.log(ulskills);
+  ulskills.style.display = "block";
 }
 
 const listjobs = document.getElementById("list-jobs");
@@ -167,6 +135,7 @@ for (const job in dataJob) {
 
   let ulskills = document.createElement("ul");
   ulskills.className = "ulskill";
+  ulskills.id = "ulskill_" + String(i);
 
   for (const sk of dataJob[job].skill) {
     const liskills = document.createElement("li");
@@ -195,7 +164,7 @@ for (const job in dataJob) {
 
   const box = document.createElement("div");
   box.className = "box";
-  box.id = i++;
+  box.id = "box_" + i++;
   // Define the onclick event handler properly
   box.onclick = function () {
     showPopup(this.id); // Passing the box's ID to the showPopup function

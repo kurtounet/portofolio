@@ -38,41 +38,11 @@ var dataJob = [{
 }];
 
 function showPopup(id) {
-  var b = "box" + id;
-  var box = document.getElementById(b);
-  console.log(box); //box.classList.add("open-box");
-
-  /*
-  function closeMenu() {
-    box.className = "";
-  }
-    menuBurger.addEventListener("click", () => {
-   
-  });
-    menuClose.addEventListener("click", () => {
-    closeMenu();
-  });
-  
-  const popup = document.getElementById("divPopup");
-  let titre = document.getElementById("h3");
-  titre = dataJob[id].titre;
-  let company = document.getElementById("p");
-  company = dataJob[id].company;
-  let year = document.getElementById("p");
-  year = dataJob[id].year;
-  let ulskills = document.createElement("ul");
-  for (const sk of dataJob[id].skill) {
-    const liskills = document.createElement("li");
-    liskills.textContent = sk;
-    ulskills.appendChild(liskills);
-    console.log(sk);
-  }
-  popup.appendChild(titre);
-  popup.appendChild(company);
-  popup.appendChild(year);
-  popup.appendChild(ulskills);
-  popup.style.display = "block";
-  */
+  console.log(id);
+  var box = document.getElementById(id);
+  var ulskills = box.getElementsByTagName("ul");
+  console.log(ulskills);
+  ulskills.style.display = "block";
 }
 
 var listjobs = document.getElementById("list-jobs");
@@ -92,6 +62,7 @@ for (var job in dataJob) {
   divYearCard.className = "yearCard";
   var ulskills = document.createElement("ul");
   ulskills.className = "ulskill";
+  ulskills.id = "ulskill_" + String(i);
   var _iteratorNormalCompletion = true;
   var _didIteratorError = false;
   var _iteratorError = undefined;
@@ -136,7 +107,7 @@ for (var job in dataJob) {
   bulletline.appendChild(line);
   var box = document.createElement("div");
   box.className = "box";
-  box.id = i++; // Define the onclick event handler properly
+  box.id = "box_" + i++; // Define the onclick event handler properly
 
   box.onclick = function () {
     showPopup(this.id); // Passing the box's ID to the showPopup function
