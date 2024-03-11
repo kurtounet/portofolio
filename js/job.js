@@ -106,12 +106,15 @@ let dataJob = [
   },
 ];
 
-function showPopup(id) {
-  console.log(id);
+function showUl(id) {
   const box = document.getElementById(id);
-  const ulskills = box.getElementsByTagName("ul");
-  console.log(ulskills);
-  ulskills.style.display = "block";
+  const ulskills = box.getElementsByTagName("ul")[0]; // Get the first ul element
+
+  if (ulskills.style.display == "none") {
+    ulskills.style.display = "flex";
+  } else {
+    ulskills.style.display = "none";
+  }
 }
 
 const listjobs = document.getElementById("list-jobs");
@@ -165,10 +168,10 @@ for (const job in dataJob) {
   const box = document.createElement("div");
   box.className = "box";
   box.id = "box_" + i++;
-  // Define the onclick event handler properly
   box.onclick = function () {
-    showPopup(this.id); // Passing the box's ID to the showPopup function
+    showUl(this.id);
   };
+  // Define the onclick event handler properly
 
   box.appendChild(bulletline);
   box.appendChild(divYearCard);

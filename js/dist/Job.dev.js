@@ -37,12 +37,15 @@ var dataJob = [{
   skill: ["Conception de circuits", "Microcontrôleurs", "Disposition de PCB", "Traitement de signal", "Soudage", "Dépannage", "Logiciels CAO (AutoCAD)", "Utilisation d'oscilloscope"]
 }];
 
-function showPopup(id) {
-  console.log(id);
+function showUl(id) {
   var box = document.getElementById(id);
-  var ulskills = box.getElementsByTagName("ul");
-  console.log(ulskills);
-  ulskills.style.display = "block";
+  var ulskills = box.getElementsByTagName("ul")[0]; // Get the first ul element
+
+  if (ulskills.style.display == "none") {
+    ulskills.style.display = "flex";
+  } else {
+    ulskills.style.display = "none";
+  }
 }
 
 var listjobs = document.getElementById("list-jobs");
@@ -107,11 +110,12 @@ for (var job in dataJob) {
   bulletline.appendChild(line);
   var box = document.createElement("div");
   box.className = "box";
-  box.id = "box_" + i++; // Define the onclick event handler properly
+  box.id = "box_" + i++;
 
   box.onclick = function () {
-    showPopup(this.id); // Passing the box's ID to the showPopup function
-  };
+    showUl(this.id);
+  }; // Define the onclick event handler properly
+
 
   box.appendChild(bulletline);
   box.appendChild(divYearCard);

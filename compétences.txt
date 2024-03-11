@@ -25,20 +25,12 @@ CONCEPTION MULTI-PLATEFORMES
 Compatible tous supports, tablette & application mobile
 
 
-HTML 5.0
- 
-CSS 3/4
- 
-BOOTSTRAP
- 
-PHP
- 
-MYSQL, Maria db
- 
-JAVASCRIPT
- 
-RESPONSIVE
- 
-SEO
- 
+HTML 5.0 
+CSS 3/4 
+BOOTSTRAP 
+PHP 
+MYSQL, Maria db 
+JAVASCRIPT 
+RESPONSIVE 
+SEO 
 Angular

@@ -73,7 +73,6 @@ header div {
   display: flex;
   justify-content: center;
   align-content: center;
-  align-items: center;
 }
 header div img#logo {
   width: 32px;
@@ -239,7 +238,7 @@ main section#a-propos .job-card p {
   padding: 0px;
 }
 main section#a-propos .job-card ul {
-  display: flex;
+  display: none;
   flex-direction: column;
   list-style-type: none;
 }
