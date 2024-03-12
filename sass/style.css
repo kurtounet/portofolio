@@ -138,7 +138,7 @@ nav ul {
   flex-direction: column;
   align-items: center;
   align-content: center;
-  height: -moz-fit-content;
+
   height: fit-content;
 }
 nav ul li {
