@@ -13,6 +13,210 @@ body, ul, li, h2, h3, p, a {
 }
 
 /* // $asset: "assets/images/logo-technologie/" */
+/* // $asset: "assets/images/logo-technologie/" */
+main section#accueil {
+  height: fit-content;
+  background-image: linear-gradient(rgba(51, 51, 51, 0.9), #333333), url(/assets/imgs/javascriptcode.jpg);
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  align-items: center;
+}
+main section#accueil h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+main section#accueil h2 {
+  color: #F2C335;
+  font-size: 2rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+main section#accueil p {
+  width: 80%;
+  padding: 5px 20px;
+  font-size: 1.5rem;
+}
+
+/* // $asset: "assets/images/logo-technologie/" */
+section#a-propos {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section#a-propos #list-jobs {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  justify-items: center;
+}
+section#a-propos #list-jobs .box {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  user-select: none;
+}
+section#a-propos #list-jobs:hover {
+  cursor: pointer;
+}
+section#a-propos #list-jobs .year {
+  color: #D94423;
+  font-size: 1rem;
+  padding: 0px;
+}
+section#a-propos #list-jobs .bullet {
+  background-color: #D94423;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  z-index: 10;
+  margin: 0.5rem;
+}
+section#a-propos #list-jobs .line {
+  background-color: #ffffff;
+  width: 2px;
+  height: 80px;
+}
+section#a-propos #list-jobs .job-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 2px solid #D94423;
+  color: #0D0D0D;
+  height: 10%;
+  width: 300px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+section#a-propos #list-jobs .job-card h3 {
+  font-size: 1rem;
+  color: #D94423;
+  display: inline-block;
+}
+section#a-propos #list-jobs .job-card p {
+  font-size: 1rem;
+  padding: 0px;
+}
+section#a-propos #list-jobs .job-card ul {
+  display: none;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+/* // $asset: "assets/images/logo-technologie/" */
+section#projets {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section#projets div#article-projet {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  color: #0D0D0D;
+}
+section#projets div#article-projet article {
+  background-color: #ffffff;
+  height: fit-content;
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  border: 2px solid #D94423;
+  margin: 10px;
+  padding: 0.5rem;
+}
+section#projets div#article-projet article img {
+  object-fit: contain;
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
+}
+section#projets div#article-projet article ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+section#projets div#article-projet article ul .logo-techno-card {
+  width: 5vh;
+  height: 5vh;
+}
+section#projets div#article-projet article h3, section#projets div#article-projet article p {
+  padding: 0.5rem;
+}
+section#projets div#article-projet article p {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+section#projets div#article-projet article a {
+  background-color: #0477BF;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  text-decoration: none;
+}
+
+/* // $asset: "assets/images/logo-technologie/" */
+section#technologies {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section#technologies #divTechno {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+section#technologies #divTechno .card-tech {
+  background-color: #ffffff;
+  border: 2px solid #D94423;
+  border-radius: 8px;
+  color: #0D0D0D;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 2px 7px 6px -6px rgba(0, 0, 0, 0.75);
+  margin: 10px;
+  width: 290px;
+}
+section#technologies #divTechno h3 {
+  padding: 1rem;
+}
+section#technologies #divTechno ul {
+  border-radius: 8px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ffffff;
+  width: fit-content;
+  margin: 10px;
+}
+section#technologies #divTechno ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem;
+}
+section#technologies #divTechno ul li img {
+  width: 50px;
+  height: 50px;
+}
+
 /* Pour les écran inférieur à 361 px */
 body {
   color: #ffffff;
@@ -163,190 +367,6 @@ main section {
   width: 100%;
   /*border-bottom: 2px solid rgba(250, 250 , 250, 1)*/
 }
-main section#accueil {
-  height: fit-content;
-  background-image: linear-gradient(rgba(51, 51, 51, 0.9), #333333), url(/assets/imgs/javascriptcode.jpg);
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  color: #ffffff;
-  align-items: center;
-}
-main section#accueil h1 {
-  font-size: 3rem;
-  text-align: center;
-}
-main section#accueil h2 {
-  color: #F2C335;
-  font-size: 2rem;
-  padding: 0.5rem;
-  margin: 0.5rem;
-}
-main section#accueil p {
-  width: 80%;
-  padding: 5px 20px;
-  font-size: 1.5rem;
-}
-main section#a-propos {
-  height: fit-content;
-}
-main section#a-propos .flex-col-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-main section#a-propos .box {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  user-select: none;
-}
-main section#a-propos:hover {
-  cursor: pointer;
-}
-main section#a-propos .year {
-  color: #D94423;
-  font-size: 1rem;
-  padding: 0px;
-}
-main section#a-propos .bullet {
-  background-color: #D94423;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  z-index: 10;
-  margin: 0.5rem;
-}
-main section#a-propos .line {
-  background-color: #ffffff;
-  width: 2px;
-  height: 80px;
-}
-main section#a-propos .job-card {
-  background-color: #ffffff;
-  border-radius: 8px;
-  border: 2px solid #D94423;
-  color: #0D0D0D;
-  height: 10%;
-  width: 300px;
-  margin: 0.5rem;
-  padding: 0.5rem;
-}
-main section#a-propos .job-card h3 {
-  font-size: 1rem;
-  color: #D94423;
-  display: inline-block;
-}
-main section#a-propos .job-card p {
-  font-size: 1rem;
-  padding: 0px;
-}
-main section#a-propos .job-card ul {
-  display: none;
-  flex-direction: column;
-  list-style-type: none;
-}
-main section#projets {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 10px;
-  height: fit-content;
-}
-main section#projets div#article-projet {
-  color: #0D0D0D;
-}
-main section#projets div#article-projet article {
-  background-color: #ffffff;
-  height: fit-content;
-  width: 270px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 8px;
-  border: 2px solid #D94423;
-  margin: 10px;
-  padding: 0.5rem;
-}
-main section#projets div#article-projet article ul {
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 1rem;
-}
-main section#projets div#article-projet article .logo-techno-card {
-  width: 5vh;
-  height: 5vh;
-}
-main section#projets div#article-projet article img {
-  object-fit: contain;
-  width: 100%;
-  height: 200px;
-  border-radius: 20px;
-}
-main section#projets div#article-projet article h3, main section#projets div#article-projet article p {
-  padding: 0.5rem;
-}
-main section#projets div#article-projet article p {
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-}
-main section#projets div#article-projet article a {
-  background-color: #0477BF;
-  color: #ffffff;
-  font-weight: bold;
-  border-radius: 8px;
-  padding: 0.5rem;
-  margin: 0.5rem;
-  text-decoration: none;
-}
-main section#technologies {
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-main section#technologies .card-tech {
-  background-color: #ffffff;
-  border: 2px solid #D94423;
-  border-radius: 8px;
-  color: #0D0D0D;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 2px 7px 6px -6px rgba(0, 0, 0, 0.75);
-  margin: 10px;
-  width: 290px;
-}
-main section#technologies .card-tech h3 {
-  padding: 1rem;
-}
-main section#technologies .card-tech ul {
-  border-radius: 8px;
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #ffffff;
-  width: fit-content;
-  margin: 10px;
-}
-main section#technologies .card-tech ul li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0.5rem;
-}
-main section#technologies .card-tech ul li img {
-  width: 50px;
-  height: 50px;
-}
 main section#contact {
   height: fit-content;
   display: flex;
@@ -437,21 +457,36 @@ footer {
     font-size: 1rem;
   }
 
-  main #technologies div#divTechno {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
   main #a-propos div#list-jobs {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: flex-start;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  main #projets div#article-projet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  main #technologies div#divTechno {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
   }
 }
-/* Tablettes*/
-/*PC*/
-@media screen and (orientation: landscape) {
-  /* Styles pour les écrans en mode paysage */
+@media screen and (min-width: 1135px) {
+  main #a-propos div#list-jobs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+  main #projets div#article-projet {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+  main #technologies div#divTechno {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
 }

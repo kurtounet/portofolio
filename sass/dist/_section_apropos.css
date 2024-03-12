@@ -1,0 +1,64 @@
+/* // $asset: "assets/images/logo-technologie/" */
+section#a-propos {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section#a-propos #list-jobs {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  justify-items: center;
+}
+section#a-propos #list-jobs .box {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  user-select: none;
+}
+section#a-propos #list-jobs:hover {
+  cursor: pointer;
+}
+section#a-propos #list-jobs .year {
+  color: #D94423;
+  font-size: 1rem;
+  padding: 0px;
+}
+section#a-propos #list-jobs .bullet {
+  background-color: #D94423;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  z-index: 10;
+  margin: 0.5rem;
+}
+section#a-propos #list-jobs .line {
+  background-color: #ffffff;
+  width: 2px;
+  height: 80px;
+}
+section#a-propos #list-jobs .job-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 2px solid #D94423;
+  color: #0D0D0D;
+  height: 10%;
+  width: 300px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+section#a-propos #list-jobs .job-card h3 {
+  font-size: 1rem;
+  color: #D94423;
+  display: inline-block;
+}
+section#a-propos #list-jobs .job-card p {
+  font-size: 1rem;
+  padding: 0px;
+}
+section#a-propos #list-jobs .job-card ul {
+  display: none;
+  flex-direction: column;
+  list-style-type: none;
+}

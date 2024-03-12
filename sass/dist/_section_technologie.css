@@ -1,0 +1,49 @@
+/* // $asset: "assets/images/logo-technologie/" */
+section#technologies {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section#technologies #divTechno {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+section#technologies #divTechno .card-tech {
+  background-color: #ffffff;
+  border: 2px solid #D94423;
+  border-radius: 8px;
+  color: #0D0D0D;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 2px 7px 6px -6px rgba(0, 0, 0, 0.75);
+  margin: 10px;
+  width: 290px;
+}
+section#technologies #divTechno h3 {
+  padding: 1rem;
+}
+section#technologies #divTechno ul {
+  border-radius: 8px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ffffff;
+  width: fit-content;
+  margin: 10px;
+}
+section#technologies #divTechno ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem;
+}
+section#technologies #divTechno ul li img {
+  width: 50px;
+  height: 50px;
+}

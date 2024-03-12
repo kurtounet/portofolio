@@ -1,5 +1,9 @@
 @import "_base.sass"
 @import "_variables.sass"
+@import "_section_acceuil.sass"
+@import "_section_apropos.sass"
+@import "_section_projets.sass"
+@import "_section_technologie.sass"
 /* Pour les écran inférieur à 361 px */
 body
 	color: $blanc
@@ -146,199 +150,6 @@ main
 
 		/*border-bottom: 2px solid rgba(250, 250 , 250, 1)*/
 
-	section#accueil
-		height: fit-content
-		background-image: linear-gradient(rgba(51, 51, 51, 0.9), rgba(51, 51, 51, 1)),url(/assets/imgs/javascriptcode.jpg)
-		background-position: center
-		display: flex
-		flex-direction: column
-		color: $blanc
-		align-items: center
-
-		h1
-			font-size: 3rem
-			text-align: center
-
-		h2
-			color: $jaune
-			font-size: 2rem
-			padding: 0.5rem
-			margin: 0.5rem
-
-		p
-			width: 80%
-
-			padding: 5px 20px
-			font-size: 1.5rem
-
-	section#a-propos
-		height: fit-content
-		.flex-col-center
-			display: flex
-			flex-direction: column
-			align-items: center
-
-		#list-jobs
-
-		.box
-			display: flex
-			flex-direction: row
-			align-items: flex-start
-			user-select: none
-		&:hover
-			cursor: pointer
-		.year
-			color: $orange
-			font-size: 1rem
-			padding: 0px
-
-		.bullet
-			background-color: $orange
-			width: $rayon-bulle
-			height: $rayon-bulle
-			border-radius: 50%
-			z-index: 10
-			margin: 0.5rem
-
-		.line
-			background-color: $blanc
-			width: 2px
-			height: 80px
-
-		.job-card
-			background-color: $blanc
-			border-radius: $radius-card
-			border: 2px solid $orange
-			color: $noir
-			height: 10%
-			width: 300px
-			margin: 0.5rem
-			padding: 0.5rem
-
-			h3
-				font-size: 1rem
-				color: $orange
-				display: inline-block
-			p
-				font-size: 1rem
-				padding: 0px
-
-			ul
-
-				display: none
-				flex-direction: column
-				list-style-type: none
-
-		.open
-
-		.close
-
-	section#projets
-		display: grid
-		grid-template-columns: 1fr
-		grid-gap: 10px
-
-		height: fit-content
-
-		div#article-projet
-
-			// display: flex
-			// flex-wrap: wrap
-			// justify-content: center
-			color: $noir
-
-			article
-				background-color: $blanc
-				height: fit-content
-				width: 270px
-				display: flex
-				flex-direction: column
-				align-items: center
-				border-radius: $radius-card
-				border: 2px solid $orange
-				margin: 10px
-				padding: 0.5rem
-
-				ul
-					list-style-type: none
-					display: flex
-					flex-wrap: wrap
-					justify-content: space-evenly
-					padding: 1rem
-
-				.logo-techno-card
-					width: $w-logo-techno-card
-					height: $w-logo-techno-card
-
-				img
-					object-fit: contain
-					width: $w-image-projet-card
-					height: $h-image-projet-card
-					border-radius: 20px
-					//margin-top: 1rem
-
-				h3,p
-					padding: 0.5rem
-
-				p
-					width: 100%
-
-					//white-space: nowrap
-					overflow: hidden
-					text-overflow: ellipsis
-					display: -webkit-box
-					-webkit-line-clamp: 3
-					-webkit-box-orient: vertical
-				a
-					background-color: $bleu
-					color: $blanc
-					font-weight: bold
-					border-radius: $radius-card
-					padding: 0.5rem
-					margin: 0.5rem
-					text-decoration: none
-
-	section#technologies
-		height: fit-content
-		display: flex
-		flex-direction: column
-		align-items: center
-
-		.card-tech
-			background-color: $blanc
-			border: 2px solid $orange
-			border-radius: $radius-card
-			color: $noir
-			display: flex
-			flex-direction: column
-			align-items: center
-			justify-content: space-between
-			box-shadow: 2px 7px 6px -6px rgba(0,0,0,0.75)
-			margin: 10px
-			width: 290px
-			h3
-				padding: 1rem
-			ul
-				border-radius: $radius-card
-				list-style-type: none
-				display: flex
-				flex-wrap: wrap
-				align-items: center
-				justify-content: space-around
-				background-color: $blanc
-				width: fit-content
-				margin: 10px
-
-				li
-					display: flex
-					flex-direction: column
-					align-items: center
-					margin: 0.5rem
-
-					img
-						width: 50px
-						height: 50px
-
 	section#contact
 		height: fit-content
 		display: flex
@@ -419,24 +230,59 @@ footer
 			p
 				font-size: 1rem
 	main
-		#technologies
-			div#divTechno
-				display: flex
-				flex-wrap: wrap
-				justify-content: center
 
 		#a-propos
 			div#list-jobs
-				display: flex
-				flex-direction: row
-				justify-content: center
-				align-content: flex-start
-				flex-wrap: wrap
-/* Tablettes*/
-@media screen and (min-width: 768px)
-/*PC*/
-@media screen and (min-width: 991px)
+				// display: flex
+				// flex-direction: row
+				// justify-content: center
+				// align-content: flex-start
+				// flex-wrap: wrap
+				display: grid
+				grid-template-columns: 1fr 1fr
+				grid-gap: 10px
+		#projets
+			div#article-projet
+				display: grid
+				grid-template-columns: 1fr 1fr
+				grid-gap: 10px
 
-@media screen and (orientation: landscape)
+		#technologies
+			div#divTechno
+				display: grid
+				grid-template-columns: 1fr 1fr
+				grid-gap: 10px
 
-	/* Styles pour les écrans en mode paysage */
+				// display: flex
+				// flex-wrap: wrap
+				// justify-content: center
+
+@media screen and (min-width: 1135px)
+
+	main
+
+		#a-propos
+			div#list-jobs
+				// display: flex
+				// flex-direction: row
+				// justify-content: center
+				// align-content: flex-start
+				// flex-wrap: wrap
+				display: grid
+				grid-template-columns: 1fr 1fr 1fr
+				grid-gap: 10px
+		#projets
+			div#article-projet
+				display: grid
+				grid-template-columns: 1fr 1fr 1fr
+				grid-gap: 10px
+
+		#technologies
+			div#divTechno
+				display: grid
+				grid-template-columns: 1fr 1fr 1fr
+				grid-gap: 10px
+
+				// display: flex
+				// flex-wrap: wrap
+				// justify-content: center

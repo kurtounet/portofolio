@@ -1,0 +1,63 @@
+@import "_variables.sass"
+section#a-propos
+
+    height: fit-content
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    #list-jobs
+        display: grid
+        grid-template-columns: 1fr
+        grid-gap: 10px
+        justify-items: center
+
+        .box
+            display: flex
+            flex-direction: row
+            align-items: flex-start
+            user-select: none
+        &:hover
+            cursor: pointer
+
+        .year
+            color: $orange
+            font-size: 1rem
+            padding: 0px
+
+        .bullet
+            background-color: $orange
+            width: $rayon-bulle
+            height: $rayon-bulle
+            border-radius: 50%
+            z-index: 10
+            margin: 0.5rem
+
+        .line
+            background-color: $blanc
+            width: 2px
+            height: 80px
+
+        .job-card
+            background-color: $blanc
+            border-radius: $radius-card
+            border: 2px solid $orange
+            color: $noir
+            height: 10%
+            width: 300px
+            margin: 0.5rem
+            padding: 0.5rem
+
+            h3
+                font-size: 1rem
+                color: $orange
+                display: inline-block
+            p
+                font-size: 1rem
+                padding: 0px
+
+            ul
+
+                display: none
+                flex-direction: column
+                list-style-type: none

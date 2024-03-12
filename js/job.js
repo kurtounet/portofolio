@@ -108,7 +108,7 @@ let dataJob = [
 
 function showUl(id) {
   const box = document.getElementById(id);
-  const ulskills = box.getElementsByTagName("ul")[0]; // Get the first ul element
+  const ulskills = box.getElementsByTagName("ul")[0];
 
   if (ulskills.style.display == "none") {
     ulskills.style.display = "flex";
@@ -174,7 +174,6 @@ for (const job in dataJob) {
   box.onclick = function () {
     showUl(this.id);
   };
-  // Define the onclick event handler properly
 
   box.appendChild(bulletline);
   box.appendChild(divYearCard);
