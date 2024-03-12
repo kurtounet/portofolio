@@ -1,6 +1,5 @@
 /* // $asset: "assets/images/logo-technologie/" */
 section#projets {
-  background-color: blue;
   height: fit-content;
   display: flex;
   flex-direction: column;
