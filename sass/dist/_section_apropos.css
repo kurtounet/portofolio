@@ -11,6 +11,11 @@ section#a-propos #list-jobs {
   grid-gap: 10px;
   justify-items: center;
 }
+section#a-propos #list-jobs .flex-col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 section#a-propos #list-jobs .box {
   display: flex;
   flex-direction: row;

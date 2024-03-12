@@ -59,10 +59,14 @@ header
 	z-index: 99
 	div
 		display: flex
+		flex-direction: column
 		justify-content: center
-		align-content: center
-		//align-items: center
+		align-items: center
+
 		img#logo
+			display: flex
+			flex-direction: column
+			align-items: center
 			width: $w-logo
 			height: $h-logo
 		h1
@@ -187,7 +191,6 @@ footer
 
 /* Smartphone */
 @media screen and (min-width: 576px)
-
 /*Smartphone Paysage*/
 @media screen and (min-width: 768px)
 	header
@@ -208,9 +211,9 @@ footer
 			height: 10vh
 
 	nav
-
 		display: flex
 		justify-content: space-between
+		align-items: flex-end
 		position: fixed
 		top: 0px
 		left: 100px
@@ -258,7 +261,6 @@ footer
 				// justify-content: center
 
 @media screen and (min-width: 1135px)
-
 	main
 
 		#a-propos
