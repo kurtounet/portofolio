@@ -133,7 +133,7 @@ var _loop = function _loop(i) {
   bulletline.className = "flex-col-center";
   bulletline.appendChild(bullet);
   bulletline.appendChild(line);
-  var box = document.createElement("div");
+  var box = document.createElement("li");
   box.className = "box";
   box.id = "box_" + i;
   box.appendChild(bulletline);

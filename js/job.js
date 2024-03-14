@@ -195,7 +195,7 @@ for (let i = 0; i < dataJob.length; i++) {
   bulletline.appendChild(bullet);
   bulletline.appendChild(line);
 
-  const box = document.createElement("div");
+  const box = document.createElement("li");
   box.className = "box";
   box.id = "box_" + i;
 
