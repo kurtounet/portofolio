@@ -107,9 +107,8 @@ let dataJob = [
 ];
 
 function showUl(id) {
-  console.log(id);
-  const box = document.getElementById(id);
-  const ulskills = box.getElementsByTagName("ul")[0];
+  //const box = document.getElementById(id);
+  let ulskills = document.querySelector("#ulskill_" + id);
 
   if (ulskills.style.display == "none") {
     ulskills.style.display = "flex";
@@ -120,19 +119,19 @@ function showUl(id) {
 
 const listjobs = document.getElementById("list-jobs");
 let i = 0;
-for (const job in dataJob) {
+for (let i = 0; i < dataJob.length; i++) {
   const year = document.createElement("p");
   year.className = "year";
-  year.textContent = dataJob[job].year;
+  year.textContent = dataJob[i].year;
 
   const card = document.createElement("div");
   card.className = "job-card";
 
   const poste = document.createElement("h3");
-  poste.textContent = dataJob[job].poste;
+  poste.textContent = dataJob[i].poste;
 
   const company = document.createElement("p");
-  company.textContent = dataJob[job].company;
+  company.textContent = dataJob[i].company;
 
   const imgArrow = document.createElement("img");
   imgArrow.src = "assets/svg/arrow-job.svg";
@@ -140,12 +139,12 @@ for (const job in dataJob) {
   const divYearCard = document.createElement("div");
   divYearCard.className = "yearCard";
 
-  let ulskills = document.createElement("ul");
+  const ulskills = document.createElement("ul");
   ulskills.id = "ul_" + i;
   ulskills.className = "ulskill";
   ulskills.id = "ulskill_" + String(i);
 
-  for (const sk of dataJob[job].skill) {
+  for (const sk of dataJob[i].skill) {
     const liskills = document.createElement("li");
     liskills.textContent = sk;
     ulskills.appendChild(liskills);
@@ -155,16 +154,22 @@ for (const job in dataJob) {
   divBox.className = "btnCompagny";
 
   const btnBox = document.createElement("button");
-  btnBox.id = "btn_" + i;
-  btnBox.onclick = function () {
-    //const box = document.getElementById("box_" + i);
-    const ulskills = document.getElementById("ul_" + i);
+  const imgBtnBox = document.createElement("img");
+  imgBtnBox.src = "assets/svg/down-arrow.svg";
 
-    if (ulskills.style.display == "none") {
-      ulskills.style.display = "flex";
-    } else {
-      ulskills.style.display = "none";
-    }
+  btnBox.appendChild(imgBtnBox);
+  btnBox.id = "btn_" + i;
+  btnBox.className = "btnjobs";
+  btnBox.onclick = function () {
+    showUl(i);
+    //const box = document.getElementById("box_" + i);
+    // const ulskills = document.getElementById("ul_" + i);
+    // console.log(ulskills.style.display);
+    // if (ulskills.style.display == "none") {
+    //   ulskills.style.display = "flex";
+    // } else {
+    //   ulskills.style.display = "none";
+    // }
   };
 
   divBox.appendChild(company);
@@ -195,5 +200,4 @@ for (const job in dataJob) {
   box.appendChild(divYearCard);
 
   listjobs.appendChild(box);
-  i = i + 1;
 }

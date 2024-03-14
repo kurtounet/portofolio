@@ -11,16 +11,6 @@ section#a-propos #list-jobs {
   grid-gap: 10px;
   justify-items: center;
 }
-section#a-propos #list-jobs .btnCompagny {
-  background-color: #333;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-section#a-propos #list-jobs .btnCompagny button {
-  width: 30px;
-  height: 30px;
-}
 section#a-propos #list-jobs .flex-col-center {
   display: flex;
   flex-direction: column;
@@ -62,6 +52,24 @@ section#a-propos #list-jobs .job-card {
   width: 300px;
   margin: 0.5rem;
   padding: 0.5rem;
+}
+section#a-propos #list-jobs .job-card div.btnCompagny {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+section#a-propos #list-jobs .job-card div.btnCompagny img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+section#a-propos #list-jobs .job-card div.btnCompagny .btnjobs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 30px;
+  height: 30px;
 }
 section#a-propos #list-jobs .job-card h3 {
   font-size: 1rem;
