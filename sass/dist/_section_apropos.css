@@ -1,4 +1,8 @@
 /* // $asset: "assets/images/logo-technologie/" */
+.display-none {
+  display: none;
+}
+
 section#a-propos {
   height: fit-content;
   display: flex;
@@ -21,9 +25,6 @@ section#a-propos #list-jobs .box {
   flex-direction: row;
   align-items: flex-start;
   user-select: none;
-}
-section#a-propos #list-jobs:hover {
-  cursor: pointer;
 }
 section#a-propos #list-jobs .year {
   color: #D94423;
@@ -81,7 +82,6 @@ section#a-propos #list-jobs .job-card p {
   padding: 0px;
 }
 section#a-propos #list-jobs .job-card ul {
-  display: none;
   flex-direction: column;
   list-style-type: none;
 }

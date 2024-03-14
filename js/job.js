@@ -109,7 +109,6 @@ let dataJob = [
 function showUl(id) {
   //const box = document.getElementById(id);
   let ulskills = document.querySelector("#ulskill_" + id);
-
   if (ulskills.style.display == "none") {
     ulskills.style.display = "flex";
   } else {
@@ -118,7 +117,6 @@ function showUl(id) {
 }
 
 const listjobs = document.getElementById("list-jobs");
-let i = 0;
 for (let i = 0; i < dataJob.length; i++) {
   const year = document.createElement("p");
   year.className = "year";
@@ -140,6 +138,7 @@ for (let i = 0; i < dataJob.length; i++) {
   divYearCard.className = "yearCard";
 
   const ulskills = document.createElement("ul");
+  ulskills.style.display = "none";
   ulskills.id = "ul_" + i;
   ulskills.className = "ulskill";
   ulskills.id = "ulskill_" + String(i);
@@ -160,17 +159,21 @@ for (let i = 0; i < dataJob.length; i++) {
   btnBox.appendChild(imgBtnBox);
   btnBox.id = "btn_" + i;
   btnBox.className = "btnjobs";
-  btnBox.onclick = function () {
+  btnBox.addEventListener("click", (e) => {
     showUl(i);
-    //const box = document.getElementById("box_" + i);
-    // const ulskills = document.getElementById("ul_" + i);
-    // console.log(ulskills.style.display);
-    // if (ulskills.style.display == "none") {
-    //   ulskills.style.display = "flex";
-    // } else {
-    //   ulskills.style.display = "none";
-    // }
-  };
+  });
+
+  // btnBox.onclick = function () {
+  //   showUl(i);
+  //   //const box = document.getElementById("box_" + i);
+  //   // const ulskills = document.getElementById("ul_" + i);
+  //   // console.log(ulskills.style.display);
+  //   // if (ulskills.style.display == "none") {
+  //   //   ulskills.style.display = "flex";
+  //   // } else {
+  //   //   ulskills.style.display = "none";
+  //   // }
+  // };
 
   divBox.appendChild(company);
   divBox.appendChild(btnBox);

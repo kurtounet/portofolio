@@ -1,4 +1,8 @@
 @import "_variables.sass"
+
+.display-none
+    display: none
+
 section#a-propos
 
     height: fit-content
@@ -23,9 +27,6 @@ section#a-propos
             flex-direction: row
             align-items: flex-start
             user-select: none
-
-        &:hover
-            cursor: pointer
 
         .year
             color: $orange
@@ -81,6 +82,5 @@ section#a-propos
                 padding: 0px
 
             ul
-                display: none
                 flex-direction: column
                 list-style-type: none

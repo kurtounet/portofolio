@@ -49,32 +49,32 @@ function showUl(id) {
 }
 
 var listjobs = document.getElementById("list-jobs");
-var i = 0;
 
-var _loop = function _loop(_i) {
+var _loop = function _loop(i) {
   var year = document.createElement("p");
   year.className = "year";
-  year.textContent = dataJob[_i].year;
+  year.textContent = dataJob[i].year;
   var card = document.createElement("div");
   card.className = "job-card";
   var poste = document.createElement("h3");
-  poste.textContent = dataJob[_i].poste;
+  poste.textContent = dataJob[i].poste;
   var company = document.createElement("p");
-  company.textContent = dataJob[_i].company;
+  company.textContent = dataJob[i].company;
   var imgArrow = document.createElement("img");
   imgArrow.src = "assets/svg/arrow-job.svg";
   var divYearCard = document.createElement("div");
   divYearCard.className = "yearCard";
   var ulskills = document.createElement("ul");
-  ulskills.id = "ul_" + _i;
+  ulskills.style.display = "none";
+  ulskills.id = "ul_" + i;
   ulskills.className = "ulskill";
-  ulskills.id = "ulskill_" + String(_i);
+  ulskills.id = "ulskill_" + String(i);
   var _iteratorNormalCompletion = true;
   var _didIteratorError = false;
   var _iteratorError = undefined;
 
   try {
-    for (var _iterator = dataJob[_i].skill[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+    for (var _iterator = dataJob[i].skill[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
       var sk = _step.value;
       var liskills = document.createElement("li");
       liskills.textContent = sk;
@@ -102,19 +102,21 @@ var _loop = function _loop(_i) {
   var imgBtnBox = document.createElement("img");
   imgBtnBox.src = "assets/svg/down-arrow.svg";
   btnBox.appendChild(imgBtnBox);
-  btnBox.id = "btn_" + _i;
+  btnBox.id = "btn_" + i;
   btnBox.className = "btnjobs";
-
-  btnBox.onclick = function () {
-    showUl(_i); //const box = document.getElementById("box_" + i);
-    // const ulskills = document.getElementById("ul_" + i);
-    // console.log(ulskills.style.display);
-    // if (ulskills.style.display == "none") {
-    //   ulskills.style.display = "flex";
-    // } else {
-    //   ulskills.style.display = "none";
-    // }
-  };
+  btnBox.addEventListener("click", function (e) {
+    showUl(i);
+  }); // btnBox.onclick = function () {
+  //   showUl(i);
+  //   //const box = document.getElementById("box_" + i);
+  //   // const ulskills = document.getElementById("ul_" + i);
+  //   // console.log(ulskills.style.display);
+  //   // if (ulskills.style.display == "none") {
+  //   //   ulskills.style.display = "flex";
+  //   // } else {
+  //   //   ulskills.style.display = "none";
+  //   // }
+  // };
 
   divBox.appendChild(company);
   divBox.appendChild(btnBox);
@@ -133,12 +135,12 @@ var _loop = function _loop(_i) {
   bulletline.appendChild(line);
   var box = document.createElement("div");
   box.className = "box";
-  box.id = "box_" + _i;
+  box.id = "box_" + i;
   box.appendChild(bulletline);
   box.appendChild(divYearCard);
   listjobs.appendChild(box);
 };
 
-for (var _i = 0; _i < dataJob.length; _i++) {
-  _loop(_i);
+for (var i = 0; i < dataJob.length; i++) {
+  _loop(i);
 }
