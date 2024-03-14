@@ -108,6 +108,10 @@ section#a-propos #list-jobs .job-card ul {
   flex-direction: column;
   list-style-type: none;
 }
+section#a-propos button {
+  width: 20px;
+  height: 20px;
+}
 
 /* // $asset: "assets/images/logo-technologie/" */
 section#projets {

@@ -38,6 +38,7 @@ var dataJob = [{
 }];
 
 function showUl(id) {
+  console.log(id);
   var box = document.getElementById(id);
   var ulskills = box.getElementsByTagName("ul")[0];
 
@@ -66,6 +67,7 @@ for (var job in dataJob) {
   var divYearCard = document.createElement("div");
   divYearCard.className = "yearCard";
   var ulskills = document.createElement("ul");
+  ulskills.id = "ul_" + i;
   ulskills.className = "ulskill";
   ulskills.id = "ulskill_" + String(i);
   var _iteratorNormalCompletion = true;
@@ -95,11 +97,27 @@ for (var job in dataJob) {
     }
   }
 
+  var divBox = document.createElement("div");
+  divBox.className = "btnCompagny";
+  var btnBox = document.createElement("button");
+  btnBox.id = "btn_" + i;
+
+  btnBox.onclick = function () {
+    //const box = document.getElementById("box_" + i);
+    var ulskills = document.getElementById("ul_" + i);
+
+    if (ulskills.style.display == "none") {
+      ulskills.style.display = "flex";
+    } else {
+      ulskills.style.display = "none";
+    }
+  };
+
+  divBox.appendChild(company);
+  divBox.appendChild(btnBox);
   card.appendChild(poste);
-  card.appendChild(company);
+  card.appendChild(divBox);
   card.appendChild(ulskills);
-  divYearCard.appendChild(year);
-  divYearCard.appendChild(year);
   divYearCard.appendChild(year);
   divYearCard.appendChild(card);
   var bullet = document.createElement("div");
@@ -112,13 +130,9 @@ for (var job in dataJob) {
   bulletline.appendChild(line);
   var box = document.createElement("div");
   box.className = "box";
-  box.id = "box_" + i++;
-
-  box.onclick = function () {
-    showUl(this.id);
-  };
-
+  box.id = "box_" + i;
   box.appendChild(bulletline);
   box.appendChild(divYearCard);
   listjobs.appendChild(box);
+  i = i + 1;
 }

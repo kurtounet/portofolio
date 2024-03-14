@@ -11,6 +11,16 @@ section#a-propos #list-jobs {
   grid-gap: 10px;
   justify-items: center;
 }
+section#a-propos #list-jobs .btnCompagny {
+  background-color: #333;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+section#a-propos #list-jobs .btnCompagny button {
+  width: 30px;
+  height: 30px;
+}
 section#a-propos #list-jobs .flex-col-center {
   display: flex;
   flex-direction: column;
